@@ -12,4 +12,5 @@ void main() {
   String morning = 'Morgen';
   String s = 'Heute';
   String spa = '';
+  print(a + seven);
 }

@@ -1,0 +1,13 @@
+void main() {
+String a= 'apfel';
+String b= 'birne';
+String c= 'kirche';
+String d= 'mango';
+b=c;
+d=a;
+c=d;
+a=b;
+d=c;
+b=d;
+print (a,b,c,d);
+}

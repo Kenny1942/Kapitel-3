@@ -22,20 +22,27 @@ void main() {
   winds.add(weatherDate[1]['wind']);
   winds.add(weatherDate[2]['wind']);
 
-  if (temps[2] == null) {
-    temps[2] = 0;
-  }
+  int c = 0;
 
-  if (rains[1] == null) {
-    rains[1] = 0;
+  while (c < 3) {
+    if (temps[c] == null) {
+      temps[c] = 0;
+    }
+    c = c + 1;
   }
-
-  if (winds[0] == null) {
-    winds[0] = 0;
+  c = 0;
+  while (c < 3) {
+    if (rains[c] == null) {
+      rains[c] = 0;
+    }
+    c = c + 1;
   }
-
-  if (winds[2] == null) {
-    winds[2] = 0;
+  c = 0;
+  while (c < 3) {
+    if (winds[c] == null) {
+      winds[c] = 0;
+    }
+    c = c + 1;
   }
 
   double? avgTemp = ((temps[0]! + temps[1]! + temps[2]!) / 3);

@@ -170,5 +170,5 @@ void main() {
       angriffswert = 0;
   }
 
-  print('$ck hat bei $tz und $wr $angriffswert');
+  print('$ck hat bei $tz und $wr  $angriffswert');
 }

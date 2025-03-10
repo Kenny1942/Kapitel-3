@@ -17,6 +17,7 @@ void main() {
 
     double result = 0;
     switch (option) {
+      //summe
       case '1':
         print('Wie viele Zahlen möchstest du addieren:');
         String amountNumbersstring = stdin.readLineSync() ?? '';
@@ -32,6 +33,7 @@ void main() {
         }
         print('das Ergebnis ist $result');
 
+      //substraktion
       case '2':
         print('Bitte gib die erste Zahl ein');
         String number2String = stdin.readLineSync() ?? '';
@@ -42,7 +44,7 @@ void main() {
         double number = double.parse(numberString);
         result = number2 - number;
         print('das Ergebnis ist $result');
-
+      // multiplikation
       case '3':
         print('Wie viele Zahlen möchstest du berechnen:');
         String amountNumbersstring = stdin.readLineSync() ?? '';
@@ -57,7 +59,7 @@ void main() {
           x = x + 1;
         }
         print('das Ergebnis ist $result');
-
+      //division
       case '4':
         print('Bitte gib die erste Zahl ein');
         String number2String = stdin.readLineSync() ?? '';

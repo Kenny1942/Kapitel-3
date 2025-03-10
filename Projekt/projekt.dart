@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   String menu = 'ja';
-  while (menu == 'ja') {
+  while ((menu == 'ja') || (menu == 'Ja') || (menu == 'JA')) {
     //hauptmenü
     print('RECHNER');
     print('');
@@ -72,7 +72,8 @@ void main() {
         exit(1);
     }
 
-    print('möchtest du wieder rechnen? Ja/nein:');
+    print('möchtest du wieder den Taschenrechner benutzen? Ja/nein:');
     menu = stdin.readLineSync() ?? "";
   }
+  print('Danke fürs Benutzen');
 }

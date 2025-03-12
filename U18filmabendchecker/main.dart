@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 void main() {
   int age = 13;
   bool hasParentalConsent = false;

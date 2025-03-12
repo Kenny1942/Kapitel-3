@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 void main() {
   List<Map<String, double?>> weatherDate = [
     {'temp': 5.3, 'rain': 0.9, 'wind': null},

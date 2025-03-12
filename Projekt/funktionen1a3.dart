@@ -3,7 +3,10 @@ import 'dart:io';
 void main() {
   //Funktion
   void reverseInitials(String a, String b) {
-    print('${a[0]}.${b[0]}. ');
+    int x = a.length;
+    int y = b.length;
+
+    print('${a[x - 1].toUpperCase()}.${b[y - 1].toUpperCase()}.');
   }
   //
 

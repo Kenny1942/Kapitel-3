@@ -26,5 +26,5 @@ void main() {
   int number3 = int.parse(numberString3);
 
   int x = sum(number1, number2, number3);
-  print(x);
+  print('Summe: $x');
 }

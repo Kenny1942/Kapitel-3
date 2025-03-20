@@ -37,6 +37,9 @@ double teilen(double a, double b) {
 
 ///////////////////////////////////////////////////////
 
+double number1 = 0;
+double number2 = 0;
+
 void main() {
   double result = 0;
   List<double> numbers = [];
@@ -73,6 +76,16 @@ void main() {
       }
     }
 
+    if (option == '2' || option == '4') {
+      print('Bitte gib die erste Zahl ein');
+      String number1String = stdin.readLineSync() ?? '';
+      number1 = double.parse(number1String);
+
+      print('Bitte gib die zweite Zahl ein');
+      String number2String = stdin.readLineSync() ?? '';
+      number2 = double.parse(number2String);
+    }
+
     switch (option) {
       //summe
       case '1':
@@ -80,13 +93,6 @@ void main() {
 
       //substraktion
       case '2':
-        print('Bitte gib die erste Zahl ein');
-        String number1String = stdin.readLineSync() ?? '';
-        double number1 = double.parse(number1String);
-
-        print('Bitte gib die zweite Zahl ein');
-        String number2String = stdin.readLineSync() ?? '';
-        double number2 = double.parse(number2String);
         result = substrahiren(number1, number2);
 
       // multiplikation
@@ -95,13 +101,6 @@ void main() {
 
       //division
       case '4':
-        print('Bitte gib die erste Zahl ein');
-        String number1String = stdin.readLineSync() ?? '';
-        double number1 = double.parse(number1String);
-
-        print('Bitte gib die zweite Zahl ein');
-        String number2String = stdin.readLineSync() ?? '';
-        double number2 = double.parse(number2String);
         result = teilen(number1, number2);
 
       default:

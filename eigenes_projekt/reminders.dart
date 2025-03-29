@@ -5,7 +5,7 @@ enum WeekDay {
   Donnerstag,
   Freitag,
   Samstag,
-  Sonntag
+  Sonntag,
 }
 
 class Reminders {
@@ -14,16 +14,19 @@ class Reminders {
   final WeekDay weekday;
   final bool isActive;
 
-  Reminders(
-      {required this.hour,
-      required this.minute,
-      required this.weekday,
-      required this.isActive});
+  Reminders({
+    required this.hour,
+    required this.minute,
+    required this.weekday,
+    required this.isActive,
+  });
 }
 
 void main() {
-  Reminders r1 =
-      Reminders(hour: 6, minute: 30, weekday: WeekDay.Dienstag, isActive: true);
-  Reminders r2 = Reminders(
-      hour: 18, minute: 30, weekday: WeekDay.Mittwoch, isActive: false);
+  Reminders r1 = Reminders(
+    hour: 6,
+    minute: 30,
+    weekday: WeekDay.Dienstag,
+    isActive: true,
+  );
 }

@@ -42,7 +42,7 @@ class MockDatabaseRepository implements DatabaseRepository {
     print('My reminders:');
     for (Reminders x in reminderList) {
       print(
-        'Hour: ${x.hour}, Minute:${x.minute} ,Weekday: ${x.weekday},Is active ?: ${x.isActive} ',
+        'Hour: ${x.hour}, Minute:${x.minute} ,Weekday: ${x.weekday},Is active ?: ${x.isActive ? 'yes' : 'no'} ',
       );
     }
   }

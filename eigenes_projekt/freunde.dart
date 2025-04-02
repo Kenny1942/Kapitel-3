@@ -10,7 +10,7 @@ void main() {
   Freunde f1 = Freunde(
     email: 'w.holger@gmx.de',
     name: 'Holger',
-    nickName: 'hol',
+    nickName: 'holi',
   );
   Freunde f2 = Freunde(name: 'Stefan', nickName: 'S', email: 'stefan.m@gmx.de');
 }

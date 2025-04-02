@@ -16,8 +16,8 @@ void main() {
 
   List<int> l = [a, b, c];
   l.add(b ~/ 10);
-  l.add(c ~/ 100);
+  l.add(c ~/ 50);
 
   String m = l[2].toString() + l[1].toString();
-  int n = m.length*l.length+i;
+  int n = m.length * l.length + i;
 }

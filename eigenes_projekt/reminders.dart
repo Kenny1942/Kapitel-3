@@ -24,7 +24,7 @@ class Reminders {
 
 void main() {
   Reminders r1 = Reminders(
-    hour: 6,
+    hour: 8,
     minute: 30,
     weekday: WeekDay.Dienstag,
     isActive: true,
